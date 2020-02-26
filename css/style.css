@@ -278,8 +278,12 @@
       display: inline-block;
       padding: 0 0 0 7px;
     }
-    
+
     .legend {
+      display: none;
+    }
+    
+    /* .legend {
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -310,7 +314,7 @@
     .entry.blue:after { background: rgba(156, 202, 235, 1); }
     .entry.orange:after { background: rgba(247, 167, 0, 1); }
     .entry.green:after { background: rgba(153, 198, 109, 1); }
-    .entry.yellow:after { background: rgba(249, 233, 0, 1); }
+    .entry.yellow:after { background: rgba(249, 233, 0, 1); } */
     
     /* Animations are cool!  */
     @-webkit-keyframes moveFromTopFade {
