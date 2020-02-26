@@ -1,28 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-h2 {
-    text-align: center;
-    font-family: monospace;
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: black;
-}
 
 /* Calendar Styles */
 *, *:before, *:after {
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0;
     }
     
     body {
-     overflow: hidden;
+     overflow-x: hidden;
      font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
      font-weight: 100;
      color: #f3f3f3;
-     padding: 30px;
+     padding: 0;
      background: rgb(174, 248, 223);
      -webkit-touch-callout: none;
      -webkit-user-select: none;
@@ -31,12 +18,21 @@ h2 {
      -ms-user-select: none;
      user-select: none;
     }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin: 30px auto 30px;
+      color: black;
+  }
     
     #calendar {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
-      width: 420px;
+      /* width: 420px; */
+      width: 100%;
+      max-width: 576px;
       margin: 0 auto;
       height: 570px;
       overflow: hidden;
@@ -44,7 +40,9 @@ h2 {
     
     .header {
       height: 50px;
-      width: 420px;
+      /* width: 420px; */
+      width: 100%;
+      max-width: 576px;
       background: rgba(66, 66, 66, 1);
       text-align: center;
       position:relative;
@@ -127,7 +125,8 @@ h2 {
     
     .day {
       display: inline-block;
-      width: 60px;
+      /* width: 60px; */
+      width: 14.1%;
       padding: 10px;
       text-align: center;
       vertical-align: top;
@@ -186,9 +185,11 @@ h2 {
     
     .details {
       position: relative;
-      width: 420px;
+      /* width: 420px; */
+      width: 100%;
+      max-width: 576px;
       height: 75px;
-      background: rgba(164, 164, 164, 1);
+      background: rgb(143, 16, 143);
       margin-top: 5px;
       border-radius: 4px;
     }
@@ -214,7 +215,7 @@ h2 {
       height: 0px;
       border-style: solid;
       border-width: 0 5px 5px 5px;
-      border-color: transparent transparent rgba(164, 164, 164, 1) transparent;
+      border-color: transparent transparent rgb(143, 16, 143) transparent;
       transition: all 0.7s ease;
     }
     
@@ -258,7 +259,8 @@ h2 {
     }
     
     .event.empty {
-      color: #eee;
+      color: #fff;
+      font-weight: 600;
     }
     
     .event-category {
