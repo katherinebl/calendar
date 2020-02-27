@@ -63,7 +63,7 @@
         this.oldMonth = this.month;
         this.oldMonth.className = 'month out ' + (self.next ? 'next' : 'prev');
         this.oldMonth.addEventListener('webkitAnimationEnd', function() {
-          self.oldMonth.parentNode.removeChild(self.oldMonth);
+          self.oldMonth.parentNode.removeChild(self.oldMonth);    
           self.month = createElement('div', 'month');
           self.backFill();
           self.currentMonth();
