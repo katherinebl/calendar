@@ -8,9 +8,8 @@
      overflow-x: hidden;
      font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
      font-weight: 100;
-     color: #f3f3f3;
      padding: 0;
-     background: rgb(174, 248, 223);
+     background: #333;
      -webkit-touch-callout: none;
      -webkit-user-select: none;
      -khtml-user-select: none;
@@ -23,7 +22,7 @@
       text-align: center;
       font-size: 30px;
       margin: 30px auto 30px;
-      color: black;
+      color: #ff8300;
   }
     
     #calendar {
@@ -43,7 +42,9 @@
       /* width: 420px; */
       width: 100%;
       max-width: 576px;
-      background: rgba(66, 66, 66, 1);
+      background: #fffdf9;
+      border-bottom: 2px solid #ff8300;
+      ;
       text-align: center;
       position:relative;
       z-index: 100;
@@ -54,9 +55,10 @@
       padding: 0;
       font-size: 20px;
       line-height: 50px;
-      font-weight: 100;
+      font-weight: 600;
       letter-spacing: 1px;
-      color: #fff;
+      color: #ff8300;
+      ;
     }
     
     .left, .right {
@@ -71,13 +73,13 @@
     
     .left {
       border-width: 7.5px 10px 7.5px 0;
-      border-color: transparent rgb(174, 248, 223) transparent transparent;
+      border-color: transparent #ff8300 transparent transparent;
       left: 20px;
     }
     
     .right {
       border-width: 7.5px 0 7.5px 10px;
-      border-color: transparent transparent transparent rgb(174, 248, 223);
+      border-color: transparent transparent transparent #ff8300;
       right: 20px;
     }
     
@@ -121,7 +123,7 @@
     }
     
     .week {
-     background: #4A4A4A;
+     background: #fffdf9;
     }
     
     .day {
@@ -132,7 +134,7 @@
       text-align: center;
       vertical-align: top;
       cursor: pointer;
-      background: #4A4A4A;
+      background: #fffdf9;
       position: relative;
       z-index: 100;
     }
@@ -142,20 +144,21 @@
     }
     
     .day.today {
-      color: rgba(156, 202, 235, 1);
+      color: #fd2eb3;
     }
     
     .day-name {
       font-size: 9px;
       text-transform: uppercase;
       margin-bottom: 5px;
-      color: rgba(255, 255, 255, .5);
+      color: #2a7886;
       letter-spacing: .7px;
     }
     
     .day-number {
       font-size: 24px;
       letter-spacing: 1.5px;
+      color: #2a7886;
     }
     
     
@@ -186,11 +189,10 @@
     
     .details {
       position: relative;
-      /* width: 420px; */
       width: 100%;
       max-width: 576px;
       height: 75px;
-      background: rgb(143, 16, 143);
+      background: #f4f4f4;
       margin-top: 5px;
       border-radius: 4px;
     }
